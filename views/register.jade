@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Register
+  p Use the form below to register an account with Recordly.
+  form(role='form', action='/register', method='post')
+    label
+      input(type='text', name='username', placeholder='Username')
+    label
+      input(type='password', name='password', placeholder='Password')
+    button(type='submit') Submit
