@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+
+// passport supports login via Facebook, Twitter, Google+, etc. ... we'll just use a username/password for simplicity
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 

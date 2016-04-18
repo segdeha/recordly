@@ -1,10 +1,11 @@
 extends layout
 
 block content
-  if (!user)
-    a(href='/login') Login
-    br
-    a(href='/register') Register
-  if (user)
-    p Welcome back to Recordly! You are logged in as #{user.username}
-    a(href='/logout') Logout
+  section
+    h1 Welcome to Recordly!
+    if (!user)
+      p
+        <a href="/login">Login</a> if you already have an account. Otherwise, <a href="/register">register</a>.
+    if (user)
+      p Welcome back! You are logged in as #{user.username}
+      a(href='/logout') Logout

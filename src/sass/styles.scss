@@ -1,2 +1,27 @@
 /* Sass
 */
+
+body {
+	font: 16px/1.5 'Helvetica Neue', Helvetica, Sans-Serif;
+	margin: 1em auto;
+	width: 532px;
+}
+
+header {
+	margin: 1em 0;
+
+	h1 {
+		img {
+			width: 532px;
+		}
+	}
+}
+
+section {
+	margin: 1em 0;
+}
+
+footer {
+	border-top: solid 1px black;
+	font-size: 85%;
+}

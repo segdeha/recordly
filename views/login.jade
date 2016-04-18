@@ -1,11 +1,12 @@
 extends layout
 
 block content
-  h1 Login
-  p Enter your username and password to log in to Recordly.
-  form(role='form', action='/login', method='post')
-    label
-      input(type='text', name='username', placeholder='Username')
-    label
-      input(type='password', name='password', placeholder='Password')
-    button(type='submit') Submit
+  section
+    h1 Login
+    p Enter your username and password to log in to Recordly.
+    form(role='form', action='/login', method='post')
+      label
+        input(type='text', name='username', placeholder='Username')
+      label
+        input(type='password', name='password', placeholder='Password')
+      button(type='submit') Submit
